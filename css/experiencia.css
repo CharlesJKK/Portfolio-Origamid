@@ -81,3 +81,35 @@
     background: #ffff;
     padding: 5px 10px;
 }
+
+@media(max-width: 800px){
+    .experiencia{
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .experiencia .subtitulo{
+        color: #141414;
+    }
+
+    .experiencia-texto{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .experiencia h3::after{
+        content: " - 2022";
+        font-size: 1rem;
+    }  
+
+    .empresa-ano{
+        display: none;
+    }
+}
+
+@media(max-width: 400px){
+    .empresa{
+        grid-template-columns: 1fr;
+    }
+}
